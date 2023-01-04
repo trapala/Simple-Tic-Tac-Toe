@@ -37,7 +37,6 @@ public class Main {
         /*
          * stage 5
          */
-
         // Initialize the board, currentState and currentPlayer
         initGame();
 
@@ -171,15 +170,9 @@ public class Main {
      */
     public static void paintCell(int content) {
         switch (content) {
-            case CROSS:
-                System.out.print("X ");
-                break;
-            case NOUGHT:
-                System.out.print("O ");
-                break;
-            case NO_SEED:
-                System.out.print("  ");
-                break;
+            case CROSS -> System.out.print("X ");
+            case NOUGHT -> System.out.print("O ");
+            case NO_SEED -> System.out.print("  ");
         }
     }
 }
